@@ -1,0 +1,124 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('viaje.jpg') no-repeat center center fixed; /* Imagen de fondo */
+    background-size: cover;
+    color: #190463;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#notifications-container {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.8);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+
+
+.result-message, .error-message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.result-message {
+    background-color: rgba(230, 255, 230, 0.8);
+    border: 1px solid #b3ffb3;
+}
+
+.error-message {
+    background-color: rgba(255, 230, 230, 0.8);
+    border: 1px solid #ffb3b3;
+}
+
+footer, h2 {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(241, 241, 241, 0.8);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+
+/* Estilo para el contenedor del carrito */
+.cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    width: 300px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none; /* Inicialmente oculto */
+}
+/* Estilo para los elementos del carrito */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+/* Estilo para las acciones de los elementos del carrito */
+.item-actions {
+    display: flex;
+    align-items: center;
+}
+/* Estilo para la cantidad de productos */
+.quantity {
+    margin: 0 10px;
+}
+/* Estilo para el botón de eliminar */
+.remove-btn {
+    background-color: #dc3545;
+}
+/* Estilo para el botón de pagar */
+.checkout-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+/* Estilo para el botón de pagar al pasar el mouse */
+.checkout-btn:hover {
+    background-color: #218838;
+}
+/* Estilo para el icono del carrito */
+.cart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
